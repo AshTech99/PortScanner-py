@@ -27,7 +27,8 @@ class PortScanner:
                 sock.settimeout(5)
                 result = sock.connect_ex((self.ip_address, port))
                 if result == 0:
-                    print("[+] Port {} is open.".format(port))
+                    service = socket.getservbyport(port)
+                    print("[+] Port {} is open. The service thats running is {}".format(port,service))
                     sock.close()
                 else:
                     print("[-] Port {} is closed.".format(port))
