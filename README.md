@@ -1,5 +1,5 @@
 # PortScanner-py
-Simple port scanner made with pythons built in socket library, no additional dependencies needed. 
+Simple port scanner made with pythons built in socket library inspired from hackersploit's python series, no additional dependencies needed. 
 
 > __Warning__
 >
